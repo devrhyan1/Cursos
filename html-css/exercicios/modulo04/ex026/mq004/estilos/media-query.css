@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 480px
+Celular: de 480px até 768px
+Tablet: 768px até 1024px
+Desktop: 1024px até 1280px 
+Grandes telas: acima de 1280px
+*/
+
+
+
+
+/*
+Isso e desnecessario pois a configuração para telas pequenas e dispositivos moveis ja foi feita no arquivo CSS principal
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (min-width: 480) and (max-width: 768px) {
+    
+}
+*/
+
+/*impressão*/
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessario*/
+    } 
+
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita por mim durante o curso de HTML e CSS do Guanabara';
+        text-decoration: overline;
+        width: 90vw;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1024px) and (max-width: 1280px) {
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+}
+
+/*Telas grandes*/
+@media screen and (min-width: 1280px ) {
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+}

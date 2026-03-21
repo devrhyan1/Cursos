@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+</head>
+<body onresize="mudouTamanho()" onload="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+        <menu id="opções">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque impedit tenetur? Enim accusantium nulla ex. Magnam illum non optio, voluptatibus neque soluta suscipit consequatur ex debitis tempora, quibusdam ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque ut ducimus, pariatur perspiciatis explicabo voluptatibus quisquam? Ut inventore minus totam vero quasi, suscipit dolores blanditiis nemo illo, quam excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit ut ex dolor. Obcaecati corporis veritatis atque quae. Nemo alias error odit voluptate unde a saepe adipisci qui illo commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ea sint, maxime dicta nemo nulla laboriosam impedit quae. Id adipisci commodi provident repellat maiores. Reprehenderit, consequuntur ad! Deleniti, totam numquam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem tempora deleniti quas officia. Asperiores odio, nulla illum quis sapiente repudiandae autem eaque nihil sed magni expedita, ducimus distinctio? Et, magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti quibusdam enim similique vero iste, ut tempore sapiente nam perferendis voluptas odit exercitationem consequatur omnis est, nemo, sit eius vitae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt dolorum culpa blanditiis in aut quae consequatur minima exercitationem eveniet quo odio, porro architecto reiciendis libero eos minus. Aliquam, possimus?</p>
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                opções.style.display = 'block'
+            } else {
+                opções.style.display = 'none'
+            }
+        }
+        function clickmenu() {
+            if (opções.style.display == 'block') {
+                opções.style.display = 'none'
+            } else {
+                opções.style.display = 'block'
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div
+    style="background-color: #403F3D;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif; font-weight: bolder;
+    ">
+    <a href="../indicedoex026.html" style="color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;">
+     Voltar</a>
+</body>
+</html>
