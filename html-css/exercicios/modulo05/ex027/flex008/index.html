@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*div#i1{ 
+            
+        }*/
+
+        div#i2{ /* B */
+            align-self: auto;
+        }
+
+        div#i3{ /* C */
+            align-self: flex-end;
+        }
+
+        /*div#i4{ 
+            
+        }*/
+        
+        div#i5{ /* E */
+            align-self: center;
+        }
+        
+        div#i6{ /* F */
+            align-self: flex-start;
+        }
+        
+        div#i7{ /* G */
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div
+    style="background-color: #403F3D;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif; font-weight: bolder;
+    ">
+    <a href="../indicedoex027.html" style="color:white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;">
+     Voltar</a>
+</body>
+</html>
