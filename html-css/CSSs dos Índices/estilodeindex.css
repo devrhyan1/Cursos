@@ -10,6 +10,7 @@
     --co2: #737272;
     --co3: #403F3D;
     --co4: #0D0504;
+    --fundo-card: #ffffff;
 }
 
 *{
@@ -18,7 +19,7 @@
 }
 
 body{
-    background-color: var(--co1);
+    background-color: var(--fundo-card);
 }
 
 header{
