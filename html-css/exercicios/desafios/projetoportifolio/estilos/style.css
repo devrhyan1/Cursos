@@ -20,7 +20,6 @@ body{
   color: var(--texto);
 }
 
-
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -28,6 +27,9 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav#menu ul {
